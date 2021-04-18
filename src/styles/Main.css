@@ -17,7 +17,7 @@
     --info-hover-color: #66a3e1;
     --font-dark-light-bg-color: #ffffff;
   }
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 @import url('./Landing.css');
 @import url('./Navbar.css');
 @import url('./Components.css');

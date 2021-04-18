@@ -11,6 +11,7 @@ function Components() {
     return (
         <div className="component--body">
             <Sidebar />
+            <div className="extradiv"></div>
             <Switch>
             <Route exact path={path}>
                 <Import />
