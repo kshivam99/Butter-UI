@@ -1,17 +1,14 @@
-.element--body{
-    width: 80%;
-    margin-left: 6rem;
-    height:auto;
+.element--body {
+  width: 80%;
+  margin-left: 6rem;
+  height: auto;
 }
-.element--heading{
-    margin:1rem 0;
-    font-size: 2rem;
+.element--heading {
+  margin: 1rem 0;
+  font-size: 2rem;
 }
-.element--content{
-    margin:1rem 0;
+.element--content {
+  margin: 1rem 0;
+  width: 80%;
 }
 
-.element--code{
-    width: 100%;
-
-}
