@@ -26,7 +26,6 @@ function Navbar() {
         <Link className="link" to="/components">
           <li>Components</li>
         </Link>
-        <li>Documentation</li>
       </ul>
     </div>
   );

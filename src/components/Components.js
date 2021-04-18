@@ -4,6 +4,7 @@ import {Route, Switch, useRouteMatch } from "react-router-dom";
 import Import from "./Import";
 import Avatar from "./Elements/Avatar";
 import Alert from "./Elements/Alert";
+import Input from "./Elements/Input";
 
 
 function Components() {
@@ -22,8 +23,11 @@ function Components() {
             <Route path={`${path}/alert`}>
                 <Alert />
             </Route>
+            <Route path={`${path}/input`}>
+                <Input />
+            </Route>
             <Route path ="/*">
-                <h1>page not found</h1>
+                <h1>element not found</h1>
             </Route>
             </Switch>
         </div>
