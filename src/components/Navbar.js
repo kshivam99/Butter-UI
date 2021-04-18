@@ -2,6 +2,7 @@ import React from "react";
 import Icon from "./butter.png";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   const [showDropDownNav, setShowDropDownNav] = useState(false);
@@ -14,11 +15,17 @@ function Navbar() {
       <div className="menu-icon" onClick={() => handleMenuIconClick()}>
         {!showDropDownNav ? <FaBars /> : <FaTimes />}
       </div>
-      <img className="nav-icon" src={Icon} alt="" />
+      <Link className="link" to="/">
+        <img className="nav-icon" src={Icon} alt="" />
+      </Link>
 
       <ul className={!showDropDownNav ? "menu" : "menu active"}>
-        <li>Home</li>
-        <li>Components</li>
+        <Link className="link" to="/">
+          <li>Home</li>
+        </Link>
+        <Link className="link" to="/components">
+          <li>Components</li>
+        </Link>
         <li>Documentation</li>
       </ul>
     </div>

@@ -1,0 +1,20 @@
+.avatar--img{
+    border-radius: 50%;
+    margin:1rem;
+    object-fit: cover;
+}
+
+.sm--avatar{
+    width: 4rem;
+    height: 4rem;
+}
+
+.md--avatar{
+    width: 6rem;
+    height: 6rem;
+}
+
+.lg--avatar{
+    width: 10rem;
+    height: 10rem;
+}

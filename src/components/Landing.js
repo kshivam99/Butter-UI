@@ -6,17 +6,17 @@ function Landing() {
         <div className="landing-content-section">
           <h1 className="landing-heading">
             Build Light, Deploy Faster with
-            <span style={{color:"#FEFE00"}}> Butter UI </span>
           </h1>
+          <span style={{display:"block", width:"12rem", fontSize:"2rem", fontWeight:"800", height:"4rem", textAlign:"center", backgroundColor:"#FFFF00", margin:" 0 0.5rem", padding:"0 1rem", borderRadius:"1rem"}}>Butter UI</span>
           <h3 style={{margin: "1rem 6rem"}} className="landing-description">
-            So, You know Swans. They are birds, right! But what makes them special is their ability to separate milk from water. The swan if offered a mixture of milk and water, is said to be able to drink the milk alone. Same way this UI component will give you all the CSS elements, without being heavy on your memory.        
+            Just import in your CSS file and spread it over HTML to create quick components
           </h3>
           <div className="flex">
-            <a
+            <button
               className="primary-button button-xtra-large button-link"
             >
               Explore Components
-            </a>
+            </button>
           </div>
         </div>
         </div>
