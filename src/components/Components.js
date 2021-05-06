@@ -6,6 +6,7 @@ import Avatar from "./Elements/Avatar";
 import Alert from "./Elements/Alert";
 import Input from "./Elements/Input";
 import Card from "./Elements/Card";
+import Button from "./Elements/Button";
 
 function Components() {
   let { path } = useRouteMatch();
@@ -28,6 +29,9 @@ function Components() {
         </Route>
         <Route path={`${path}/card`}>
           <Card />
+        </Route>
+        <Route path={`${path}/button`}>
+          <Button />
         </Route>
         <Route path="/*">
           <h1>element not found</h1>

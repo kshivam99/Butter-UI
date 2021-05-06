@@ -1,334 +1,130 @@
+.card1--body{
+  margin:2rem;
+  width: 15rem;
+  height: 23rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 1rem 0.5rem;
+  border-radius: 1rem;
+  z-index: 1;
+  cursor:pointer;
+  font-family: 'Montserrat', sans-serif;
+}
+.card1--body > img{
+  width:auto;
+  height:50%;
+}
 
-.component-card1 {
-    width: 20rem;
-    background: white;
-    display: flex;
-    flex-direction: column;
-    height: 27rem;
-    justify-content: space-evenly;
-    align-items: center;
-    border-radius: 1rem;
-    position: relative;
-    overflow: hidden;
-    border: 1px solid black;
-    align-self: center;
-    justify-self: center;
-  }
+.card1--body .badge{
+  position: absolute;
+  background-color: #D97706;
+  color:#fff;
+  padding: 0 1rem;
+  border-radius: 2rem 0 0 2rem;
+  top: 1rem;
+  right: 0;
+}
 
-  .component-card1 > img {
-    width: 70%;
-    transform: rotateZ(-30deg);
-    z-index: 2;
-  }
-  
-  .component-card1 > h3 {
-    font-size: 1.7rem;
-    z-index: 4;
-  }
-  
-  .component-card1 > h5 {
-    color: grey;
-  }
-  
-  .component-card1 > button {
-    padding: 0.5rem;
-    border: none;
-    background: rgb(1, 1, 46);
-    color: white;
-    border-radius: 1rem;
-  }
-  
-  .product-bg {
-    width: 10rem;
-    height: 10rem;
-    background: rgb(207, 230, 3);
-    position: absolute;
-    top: 15%;
-    clip-path: circle();
-    z-index: 1;
-    opacity: 0.5;
-  }
-  
-  /* CSS FOR CARD 2 */
-  
-  .component-card2 {
-    width: 20rem;
-    background: white;
-    height: 27rem;
-    border-radius: 1rem;
-    align-self: center;
-    justify-self: center;
-    position: relative;
-  }
-  
-  .component-card2 > img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 1rem;
-  }
-  
-  .component-card2-desc {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    z-index: 1;
-    top: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-  
-  .component-card2-top {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    margin: 1rem 0rem;
-  }
-  
-  .component-card2-top > i {
-    margin-right: 1rem;
-    color: red;
-  }
-  
-  .component-card2-top > p {
-    color: black;
-    background-color: rgb(227, 241, 31);
-    padding: 0 1rem;
-    border-top-right-radius: 1rem;
-    border-bottom-right-radius: 1rem;
-  }
-  
-  .component-card2-bottom {
-    background-color: white;
-    align-self: center;
-    margin-bottom: 1.5rem;
-    width: 90%;
-    height: 20%;
-    display: flex;
-    flex-direction: column;
-    border-radius: 1rem;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .component-card2-bottom > h3 {
-    font-weight: 600;
-    font-size: 1.3rem;
-  }
-  
-  .component-card2-bottom > h5 {
-    font-weight: 500;
-    font-size: 0.7rem;
-  }
-  .component-card2-bottom > small > span {
-    color: grey;
-  }
-  
-  /* CSS FOR CARD 3 */
-  
-  .component-card3 {
-    background: linear-gradient(black, #171800);
-    width: 20rem;
-    height: 27rem;
-    border-radius: 1rem;
-    align-self: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    justify-self: center;
-    position: relative;
-    overflow: hidden;
-  }
-  
-  .component-card3 > img {
-    position: absolute;
-    top: 0%;
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    opacity: 0.7;
-  }
-  
-  .component-card3-top {
-    color: #9e9898;
-    width: 80%;
-    height: 30%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    margin-left: 1rem;
-    margin-top: 1rem;
-    z-index:2;
-  }
-  
-  .component-card3-top > h5 {
-    font-size: 1.3rem;
-  }
-  
-  .component-card3-top > h3 {
-    font-size: 1.6rem;
-    color: white;
-    font-weight: 600;
-  }
-  
-  .component-card3-top > p {
-    font-size: 0.8rem;
-  }
-  
-  .component-card3-bottom {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    z-index: 1;
-  }
-  
-  .component-card3-bottom > button {
-    min-width: 30%;
-    margin-bottom: 1rem;
-    background: rgb(245, 170, 9);
-    border: none;
-    padding: 0.5rem;
-    border-radius: 1rem;
-    color: white;
-    font-weight: 500;
-  }
-  
-  /* CSS FOR CARD 4 */
-  
-  .component-card4 {
-    width: 20rem;
-    background: white;
-    height: 27rem;
-    border-radius: 1rem;
-    align-self: center;
-    justify-self: center;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 1rem;
-    border: 1px solid black;
-  }
-  
-  .component-card4 > img {
-    width: 100%;
-    height: 65%;
-    object-fit: contain;
-  }
-  
-  .component-card4 > h3 {
-    font-weight: 600;
-  }
-  
-  
-  .component-card4 > h5 {
-    font-weight: 600;
-    font-size: 1rem;
-  }
-  
-  .component-card4 > p {
-    font-weight: 400;
-    font-size: 0.8rem;
-    color: red;
-  }
-  
-  .component-card4-cancel {
-    width: 2rem;
-    height: 2rem;
-    border-radius: 50%;
-    border: 1px solid grey;
-    background: transparent;
-    margin-left: auto;
-  }
-  
-  /* CSS FOR CARD 5 */
-  
-  .component-card5 {
-    width: 20rem;
-    background: linear-gradient(120deg, white, #5AFF15);
-    height: 27rem;
-    border-radius: 1rem;
-    display: flex;
-    flex-direction: column;
-    justify-self: center;
-    justify-content: space-around;
-    padding: 1rem;
-  }
-  
-  .component-card5-text {
-    width: 70%;
-  }
-  
-  .component-card5-text > h2 {
-    margin-top: 1.5rem;
-    font-size: 2.5rem;
-    font-weight: 600;
-    line-height: 2.5rem;
-  }
-  
-  .component-card5-text > h3 {
-    font-size: 2.5rem;
-    font-weight: 200;
-    line-height: 2.4rem;
-  }
-  
-  .component-card5-text > p {
-    font-size: 0.7rem;
-    margin-top: 2rem;
-  }
-  
-  .component-card5 > button {
-    padding: 0.5rem;
-    width: 25%;
-    align-self: flex-end;
-    border: none;
-    background: transparent;
-    border-radius: 1rem;
-    font-weight: 600;
-    font-size: 1rem;
-  }
-  
-  /* CSS FOR CARD 6 */
-  
-  .component-card6 {
-    width: 20rem;
-    background: #101010;
-    height: 27rem;
-    border-radius: 1rem;
-    display: flex;
-    flex-direction: column;
-    justify-self: center;
-    justify-content: space-around;
-    align-items: center;
-    padding: 1rem;
-    color: white;
-    box-shadow: 5px 5px 40px green;
-  }
-  
-  .component-card6 > img {
-    width: 100%;
-    height: 40%;
-    object-fit: contain;
-  }
-  
-  .component-card6 > h2 {
-    font-size: 2rem;
-    width: 100%;
-    font-weight: 500;
-    line-height: 2.5rem;
-  }
-  
-  .component-card6 > p {
-    font-size: 0.8rem;
-    font-weight: 200;
-  }
-  
-  .component-card6 > button {
-    padding: 0.5rem;
-    border-radius: 1rem;
-    width: 40%;
-    border: none;
-    background: #227e48;
-    color: white;
-  }
+.rating--row{
+  display: flex;
+}
+
+.rating--row p{
+  color: grey;
+}
+.card1--body .card--details{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.price--row{
+  margin:1rem auto;
+  width: auto;
+  justify-content: space-around;
+}
+.new__price{
+  display: inline-flex;
+  align-items: center;
+}
+
+.old__price{
+  display: inline-flex;
+  align-items: center;
+  color: grey;
+  text-decoration: line-through;
+}
+.offer{
+  color:#00e600;
+  display: inline-flex;
+}
+
+.card1--body .card--details h4{
+  width:80%;
+  text-align: center;
+}
+
+.overlay{
+  position:absolute;
+  width:15rem;
+  height:23rem;
+  top:0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255,255,255,0.8);
+  border-radius: 1rem;
+  z-index: 2;
+  color:rgb(241, 46, 46);
+}
+
+.card2--body{
+  display: flex;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding-left: 2rem;
+  border-radius: 1rem;
+  height:18rem;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.card2--body img {
+  width:20%;
+  height:auto;
+  margin-right: 2rem;
+}
+.card2--body .card--details{
+  width: 80%;
+  padding: 2rem 0;
+}
+
+.card2--body .card--details .rating--row{
+  margin: 1rem 0;
+}
+.card2--body .new__price{
+  margin:1rem 0;
+}
+.card2--body .new__price{
+  font-size: 1.5rem;
+}
+ .offer{
+  margin:0 1rem;
+  color:#00e600;
+}
+.card2--body .old__price{
+  margin:0.5rem;
+}
+
+.card2--body .btn--row{
+  margin:1rem 0;
+}
+.card2--body .btn--primary{
+  margin:0 1rem;
+}
+.card2--body .btn--outline{
+  margin:0 1rem;
+}
+/* 
+.card2--body .card--details  */
