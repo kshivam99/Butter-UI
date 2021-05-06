@@ -1,0 +1,14 @@
+.component--body{
+    display: flex;
+    margin-top:4.5rem;
+
+}
+
+.extradiv {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    align-items: center;
+    margin: 4rem 1rem;
+    background-color: #fff;
+  }

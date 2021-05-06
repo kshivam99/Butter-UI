@@ -1,0 +1,211 @@
+
+.component-alert1 {
+    width: 90%;
+    height: 15rem;
+    background: white;
+    justify-self: center;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .alert-success {
+    width: 70%;
+    height: 70%;
+    border-radius: 1rem;
+    background: #3ebb61;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .alert-success > p {
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    font-size: 1.2rem;
+  }
+  
+  /* CSS FOR ALERT 2 */
+  
+  .component-alert2 {
+    width: 90%;
+    height: 15rem;
+    background: white;
+    justify-self: center;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .alert-failure {
+    width: 70%;
+    height: 70%;
+    border-radius: 1rem;
+    background: #d04224;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  
+  .alert-failure > p {
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    font-size: 1.2rem;
+  }
+  
+  /* CSS FOR ALERT 3 */
+  
+  .component-alert3 {
+    width: 90%;
+    height: 22rem;
+    background: white;
+    justify-self: center;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .alert-success-animate {
+    width: 15rem;
+    height: 20rem;
+    border-radius: 1rem;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top: 0.8rem solid green;
+    border-bottom: 0.8rem solid green;
+    box-shadow: 1px 1px 20px black;
+  }
+  
+  .alert-success-animate > img {
+    width: 5rem;
+    height: 5rem;
+    animation: success 3s infinite;
+  }
+  
+  .alert-success-animate-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 50%;
+    margin:1rem 0;
+  }
+  
+  .alert-success-animate-text > h3 {
+    font-weight: 600;
+  }
+  
+  .alert-success-animate-text > p {
+    color: rgb(95, 92, 92);
+    text-align: center;
+    flex-grow: 1;
+  }
+  
+  .alert-success-animate-text > button {
+    padding: 0.3rem 1rem;
+    background: green;
+    border: none;
+    color: white;
+    border-radius: 1rem;
+    cursor: pointer;
+  }
+  
+  @keyframes success {
+    0% {
+      transform: rotateY(0deg);
+    }
+    10% {
+      transform: rotateY(180deg);
+    }
+    20% {
+      transform: rotateY(360deg);
+    }
+    100% {
+      transform: rotateY(360deg);
+    }
+  }
+  
+  /* CSS FOR Alert 4 */
+  
+  .component-alert4 {
+    width: 90%;
+    height: 22rem;
+    background: white;
+    justify-self: center;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .alert-failure-animate {
+    width: 15rem;
+    height: 20rem;
+    border-radius: 1rem;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-top: 0.8rem solid #d04224;
+    border-bottom: 0.8rem solid #d04224;
+    box-shadow: 1px 1px 20px black;
+  }
+  
+  .alert-failure-animate > img {
+    width: 5rem;
+    height: 5rem;
+    object-fit: contain;
+    animation: failure 3s infinite;
+  }
+  
+  .alert-failure-animate-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 40%;
+  }
+  
+  .alert-failure-animate-text > h3 {
+    font-weight: 600;
+  }
+  
+  .alert-failure-animate-text > p {
+    color: rgb(95, 92, 92);
+  }
+  
+  .alert-failure-animate-text > button {
+    padding: 0.3rem 1rem;
+    background: #d04224;
+    border: none;
+    color: white;
+    border-radius: 1rem;
+    cursor: pointer;
+  }
+  
+  @keyframes failure {
+    0% {
+      transform: rotateZ(0deg);
+    }
+    5% {
+      transform: rotateZ(30deg);
+    }
+    10% {
+      transform: rotateZ(-30deg);
+    }
+    15% {
+      transform: rotateZ(0deg);
+    }
+    100% {
+      transform: rotateZ(0deg);
+    }
+  }
